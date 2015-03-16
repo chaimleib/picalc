@@ -1,13 +1,16 @@
 import math
 import gmpy2
 from gmpy2 import mpz
-from time import time
+
+
 
 def pi_chudnovsky_bs(digits):
     """
     Compute int(pi * 10**digits)
 
-    This is done using Chudnovsky's series with binary splitting
+    This is done using Chudnovsky's series with binary splitting.
+
+    Credit to http://www.craig-wood.com/nick/articles/pi-chudnovsky/
     """
     C = 640320
     C3_OVER_24 = C**3 // 24
